@@ -1,0 +1,82 @@
+body {
+    margin: 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;   
+    justify-content: center;
+    height: 100vh;
+    background-color: #aba876;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.puzzle {
+    background-image: url("image/pooh01.jpg");
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-size: 450px;
+}
+.piece-1 {
+    background-position: 0 0;
+}
+.piece-2 {
+    background-position: -150px 0;
+}
+.piece-3 {
+    background-position: -300px 0;
+}
+.piece-4 {
+    background-position: 0 -150px;
+}
+.piece-5 {
+    background-position: -150px -150px;
+}
+.piece-6 {
+    background-position: -300px -150px;
+}
+.piece-7 {
+    background-position: 0 -300px;
+}
+.piece-8 {
+    background-position: -150px -300px;
+}
+.piece-9 {
+    background-position: -300px -300px;
+}
+.solve_button{
+    font-size: 25px;
+    padding: 10px 30px;
+    border: none;
+    background: red;
+    color: white;
+}
+.reset_button{
+    font-size: 25px;
+    padding: 10px 30px;
+    border: none;
+    background: blue;
+    color: white;
+}
+.button_container{
+    display: flex;
+    justify-content: space-between;
+}
+.empty {
+    background-color: white;
+}
