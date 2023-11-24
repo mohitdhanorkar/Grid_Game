@@ -10,7 +10,7 @@ function shufflePieces() {
     pieces.forEach((piece, index) => {
         piece.style.order = positions[index];
     }); 
-}
+}g
 
     let draggedPiece = null;
 
@@ -28,7 +28,7 @@ function shufflePieces() {
         const data = event.dataTransfer.getData("text/plain");
         const dropTarget = event.target;
     
-        // Check if the drop target is a valid puzzle piece and not the dragged piece itself
+        // Check if the drop target is a valid puzzle piece 
         if (dropTarget.classList.contains("puzzle") && dropTarget !== draggedPiece) {
             const dropTargetOrder = parseInt(dropTarget.style.order);
             const draggedPieceOrder = parseInt(draggedPiece.style.order);
@@ -48,5 +48,4 @@ function shufflePieces() {
     function refreshPage(){
         location.reload();
     }
-
 

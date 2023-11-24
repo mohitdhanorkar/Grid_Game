@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puzzle Game</title>
-    <link rel="stylesheet" href="grdiGame.css">
+    <link rel="stylesheet" href="gridGame.css">
 </head>
 <body>
     <div class="main_container">
 
-    <div class="heading">
-        Grid Puzzle
+        <div class="heading">
+            Grid Puzzle
+        </div>
+        <div class="container">
+            <div class="puzzle piece-1" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-2" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-3" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-4" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-5" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-6" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-7" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-8" draggable="true" ondragstart="dragStart(event)"></div>
+            <div class="puzzle piece-9" draggable="true" ondragstart="dragStart(event)"></div>
+        </div>
+        <div class="button_container">
+            <input type="button" value="Solve" class="solve_button" onclick="refreshPage()">
+            <input type="button" value="Reset" class="reset_button" onclick="shufflePieces()">
+    
+        </div>
     </div>
-    <div class="container">
-        <div class="puzzle piece-1" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-2" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-3" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-4" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-5" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-6" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-7" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-8" draggable="true" ondragstart="dragStart(event)"></div>
-        <div class="puzzle piece-9" draggable="true" ondragstart="dragStart(event)"></div>
-    </div>
-    <div class="button_container">
-        <input type="button" value="Solve" class="solve_button" onclick="refreshPage()">
-        <input type="button" value="Reset" class="reset_button" onclick="shufflePieces()">
-
-    </div>
-</div>
-
-    <script src="gridGame.js"></script>
+    
+        <script src="gridGame.js"></script>
 </body>
 </html>

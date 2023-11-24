@@ -1,10 +1,10 @@
 body {
     margin: 20px 0px;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    display: flex;   
+    display: flex;
     justify-content: center;
-    height: 100vh;
     background-color: #aba876;
 }
 .main_container{
@@ -14,26 +14,26 @@ body {
 }
 .heading{
     display: flex;
+    font-size: 32px;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
 }
-.container {
-    width: 450px;
+.container{
     height: 450px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
 }
-.puzzle {
-    background-image: url("image/pooh01.jpg");
-    width: 150px;
+.puzzle{
+    background-image: url("ironman.jpg");
     height: 150px;
+    width: 150px;
     border: 1px solid black;
     box-sizing: border-box;
     background-size: 450px;
 }
-.piece-1 {
-    background-position: 0 0;
+.piece-1{
+    background-position: 0px 0px;
 }
 .piece-2 {
     background-position: -150px 0;
@@ -59,24 +59,21 @@ body {
 .piece-9 {
     background-position: -300px -300px;
 }
+.button_container{
+    display: flex;
+    justify-content: space-between;
+}
 .solve_button{
     font-size: 25px;
     padding: 10px 30px;
     border: none;
-    background: red;
+    background-color: green;
     color: white;
 }
 .reset_button{
     font-size: 25px;
     padding: 10px 30px;
     border: none;
-    background: blue;
+    background-color: red;
     color: white;
-}
-.button_container{
-    display: flex;
-    justify-content: space-between;
-}
-.empty {
-    background-color: white;
 }
